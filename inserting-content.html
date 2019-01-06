@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+    
+        $("document").ready(function() { 
+
+            $("#append").click(function() {
+                $("p:first").append("I just appended some copy!");
+            });
+
+            $("#prepend").click(function() {
+                $("p:first").prepend("I just prepended some copy!");
+            });
+
+       
+        });
+        
+    </script>
+
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <a id="append" href="#">Append</a>
+    <a id="prepend" href="#">Prepend</a>
+   
+
+    <div id="container">
+
+            <p> 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+        
+                    <p> 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+                    
+                            <p> 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+
+    </div>
+      
+            
+
+</body>
+</html>

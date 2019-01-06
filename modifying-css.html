@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+    
+        $("document").ready(function() { 
+
+        
+        $("#add-class").click(function() {
+            $("p:first").addClass('color');
+        });
+
+        $("#remove-class").click(function() {
+            $("p:first").removeClass('color');
+        });
+
+        $("#toggle-class").click(function() {
+            $("p:first").toggleClass('color');
+        });
+
+        $("#increase-class").click(function() {
+            $("p:first").css("fontSize", "+=1px");
+        });
+
+          
+
+       
+        });
+        
+    </script>
+
+    <style>
+       .color{
+           color: #00D8FF;
+
+       }
+    </style>
+</head>
+<body>
+
+    <a href="#" id="add-class">Add Class</a>
+
+    <a href="#" id="remove-class">Remove Class</a>
+
+    <a href="#" id="toggle-class">Toggle Class</a>
+
+    <a href="#" id="increase-class">Increase Class</a>
+
+    <div id="container">
+
+            <p> 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+        
+                    <p> 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+                    
+                            <p> 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+
+    </div>
+      
+            
+
+</body>
+</html>

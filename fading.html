@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+    
+        $("document").ready(function() {
+
+         $("#fade-in").on("click", function() {
+             $("#textBox").fadeIn(3000, function() {
+                 alert("I am done fading in");
+             });
+         });
+
+
+         $("#fade-out").on("click", function() {
+             $("#textBox").fadeOut("fast", function() {
+                 alert("I am done fading out");
+             });
+         });
+        });
+        
+    </script>
+
+    <style>
+        #textBox{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" id="fade-in">Fade In</a> |  <a href="#" id="fade-out">Fade Out</a>
+   <div id="textBox">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>  
+       
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+   </div>
+</body>
+</html>
